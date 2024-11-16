@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #eee;
+    --fg: #09090b;
+
+    color-scheme: light dark;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1917;
+      --fg: #eee;
+    }
+  }
+
+  * {
+    @apply m-0 box-border p-0;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  #app {
+    @apply flex min-h-screen items-center justify-center overflow-hidden;
+  }
+}
