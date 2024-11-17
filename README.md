@@ -29,3 +29,5 @@ run the project localy
 ```bash
 npm run dev
 ```
+
+MIT [LICENSE](/LICENSE)
